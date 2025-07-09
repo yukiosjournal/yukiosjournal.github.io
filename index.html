@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Yukio's Journal!</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦇</text></svg>">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        document.documentElement.dataset.theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    </script>
+</head>
+<body>
+    <div class="rpg-container">
+        <!-- Character Sheet Section -->
+        <aside class="character-sheet">
+            <header class="sheet-header">
+                <h1>TAKAHASHI YUKIO</h1>
+            </header>
+
+            <div class="character-core">
+                <div class="portrait-frame">
+                    <img src="images/yukio.jpg" alt="Yukio" class="portrait">
+                </div>
+
+                <div class="character-details">
+                    <div class="detail-item">
+                        <span class="detail-label">Apelidos:</span>
+                        <span class="detail-value">Yu, Yuki</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Idade:</span>
+                        <span class="detail-value">19 anos</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Altura:</span>
+                        <span class="detail-value">1,94</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Origem:</span>
+                        <span class="detail-value">Japão</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Profissão:</span>
+                        <span class="detail-value">Estudante de TI</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Estado civil:</span>
+                        <span class="detail-value">Solteiro</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Sexualidade:</span>
+                        <span class="detail-value">Bisexual(flex)</span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">OOC:</span>
+                        <span class="detail-value">24+</span>
+                    </div>
+                </div>
+
+                <div class="social-buttons">
+                    <a href="https://twitter.com/hiddendotfiles" target="_blank" class="social-icon" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://t.me/lazynessguy" target="_blank" class="social-icon" aria-label="Telegram">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="attributes-block">
+                <h2>ATRIBUTOS</h2>
+                <ul class="attribute-list">
+                    <li>😳Timidez: ★★★★★</li>
+                    <li>💻Conhecimento de TI: ★★★★☆</li>
+                    <li>👾Jogabilidade: ★★☆☆☆</li>
+                    <li>☕Vicio em café: ★★★★★</li>
+                    <li>🎮Vicio em portáteis: ★★★★★</li>
+                    <li>🫩Tempo de sono: ★★★☆☆</li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Blog Section -->
+        <main class="character-blog">
+            <header class="blog-header">
+                <h1>Welcome to Yukio's Journal!</h1>
+                <p class="blog-subtitle">Esse site é de um <b>personagem</b> de roleplay online <br> Todo conteúdo e informações publicadas são totalmente <b>fictícias</b></p>
+            </header>
+
+            <article class="blog-post">
+                <header class="post-header">
+                    <h2>Dev Log: Blog</h2>
+                    <div class="post-meta">
+                        <span class="post-date">Wed, July 9 2025</span>
+                        <span class="post-category">Personal Journal</span>
+                    </div>
+                </header>
+                <div class="post-content">
+                    <p>Faz alguns dias que comecei a desenvolver esse blog aqui e foi meramente interessante, teve algumas partes que tive que apelar para IA não irei negar, mas aprendi algumas coisas que eu nem sabia antes. Deu um trabalhinho pensar em como fazer, em qual estilo fazer e etc. Entretanto, depois que desenvolvi essas ideias desenrolou bem, principalmente na parte estética.</p>
+                    <p>Dores de cabeça adquiridas:</p>
+                    <ul>
+                        <li>Literalmente dor de cabeça</li>
+                        <li>Preciso urgentemente beber pelo menos 3 canecas de café agora</li>
+                        <li>Agora preciso pensar em como manter isso aqui em questão de conteúdo</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article class="blog-post">
+                <header class="post-header">
+                  <h2>Shhh</h2>
+                    <div class="post-meta">
+                        <span class="post-date">Wed, July 9 2025</span>
+                        <span class="post-category">Autocritica</span>
+                    </div>
+                </header>
+                <div class="post-content">
+                    <p>Essa parte é só para me autocriticar a respeito de me apegar muito fácil as pessoas e agora estou aqui sentindo falta dele, mas fazer o que... Eu só espero que ele esteja bem.</p>
+                </div>
+            </article>
+        </main>
+    </div>
+
+    <script>
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)');
+        const updateTheme = () => {
+            document.body.dataset.theme = prefersDark.matches ? 'dark' : 'light';
+        };
+        updateTheme();
+        prefersDark.addEventListener('change', updateTheme);
+    </script>
+</body>
+</html>
